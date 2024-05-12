@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>菜单</title>
+</head>
+<body>
+    <h1>菜单</h1>
+    <h2>荤菜:</h2>
+    <ul>
+        {% for dish in meat_dishes %}
+        <li>{{ dish }}</li>
+        {% endfor %}
+    </ul>
+    <h2>素菜:</h2>
+    <ul>
+        {% for dish in veggie_dishes %}
+        <li>{{ dish }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
